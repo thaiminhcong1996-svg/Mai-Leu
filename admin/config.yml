@@ -6,7 +6,7 @@
 
 backend:
   name: github
-  repo: thaiminhcong1996-svg/Mai-Leu     # ← em điền ở bước 2
+  repo:  maileu/maileu.github.io
   branch: main
   # base_url: https://...              # ← điền ở bước bật đăng nhập
 
