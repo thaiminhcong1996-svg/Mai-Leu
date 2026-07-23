@@ -1,0 +1,24 @@
+{
+  "ma": "ngoc-linh",
+  "ten": "Ngọc Linh",
+  "tinh": "Kon Tum",
+  "vung": "Tây Nguyên",
+  "do_cao_m": 2598,
+  "loai": "Trekking",
+  "do_kho": "Khó",
+  "thang_di_duoc": [
+    12,
+    1,
+    2,
+    3
+  ],
+  "gioi_thieu": "Nóc nhà Tây Nguyên. Đường mòn không rõ ràng, gần như bắt buộc có người địa phương đi cùng.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

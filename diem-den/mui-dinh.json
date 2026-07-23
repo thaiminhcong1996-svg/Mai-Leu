@@ -1,0 +1,25 @@
+{
+  "ma": "mui-dinh",
+  "ten": "Mũi Dinh",
+  "tinh": "Ninh Thuận",
+  "vung": "Miền Trung",
+  "do_cao_m": 0,
+  "loai": "Camping",
+  "do_kho": "Trung bình",
+  "thang_di_duoc": [
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Đồi cát chạy thẳng xuống biển, phải lội cát khoảng 30 phút mới tới hải đăng. Nắng và gió đều gắt.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

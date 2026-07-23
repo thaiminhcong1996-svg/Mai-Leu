@@ -1,0 +1,23 @@
+{
+  "ma": "binh-lieu",
+  "ten": "Bình Liêu",
+  "tinh": "Quảng Ninh",
+  "vung": "Miền Bắc",
+  "do_cao_m": 1000,
+  "loai": "Hiking",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    10,
+    11,
+    12
+  ],
+  "gioi_thieu": "Sống lưng khủng long nối các cột mốc biên giới. Tháng 11 cỏ lau nở trắng hai bên đường mòn.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

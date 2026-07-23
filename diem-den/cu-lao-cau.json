@@ -1,0 +1,27 @@
+{
+  "ma": "cu-lao-cau",
+  "ten": "Cù Lao Câu",
+  "tinh": "Bình Thuận",
+  "vung": "Miền Trung",
+  "do_cao_m": 7,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "gioi_thieu": "Đảo hoang không dân ở, phải xin phép bộ đội biên phòng và thuê tàu ra. Không điện, không nước ngọt.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

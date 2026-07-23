@@ -1,0 +1,26 @@
+{
+  "ma": "langbiang",
+  "ten": "Langbiang",
+  "tinh": "Lâm Đồng",
+  "vung": "Tây Nguyên",
+  "do_cao_m": 2167,
+  "loai": "Hiking",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Lên đỉnh trong nửa ngày. Hợp làm chuyến đầu tiên nếu anh mới bắt đầu leo núi.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

@@ -1,0 +1,25 @@
+{
+  "ma": "hon-son",
+  "ten": "Hòn Sơn",
+  "tinh": "Kiên Giang",
+  "vung": "Miền Tây",
+  "do_cao_m": 405,
+  "loai": "Hiking",
+  "do_kho": "Trung bình",
+  "thang_di_duoc": [
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Leo Ma Thiên Lãnh nhìn được toàn đảo. Đường dốc, đá trơn khi có sương sớm.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

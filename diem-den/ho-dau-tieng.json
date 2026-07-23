@@ -1,0 +1,26 @@
+{
+  "ma": "ho-dau-tieng",
+  "ten": "Hồ Dầu Tiếng",
+  "tinh": "Tây Ninh",
+  "vung": "Miền Nam",
+  "do_cao_m": 30,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Bãi rất rộng, hoàng hôn đẹp. Ban ngày gần như không có bóng râm nào.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

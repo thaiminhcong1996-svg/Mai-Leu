@@ -1,0 +1,26 @@
+{
+  "ma": "ho-tri-an",
+  "ten": "Hồ Trị An",
+  "tinh": "Đồng Nai",
+  "vung": "Miền Nam",
+  "do_cao_m": 60,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Bãi cỏ ven hồ, xe hơi vào tận nơi. Điểm tập dượt gần TP.HCM nhất cho người mới.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

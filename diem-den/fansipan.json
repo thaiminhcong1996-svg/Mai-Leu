@@ -1,0 +1,27 @@
+{
+  "ma": "fansipan",
+  "ten": "Fansipan",
+  "tinh": "Lào Cai",
+  "vung": "Miền Bắc",
+  "do_cao_m": 3143,
+  "loai": "Trekking",
+  "do_kho": "Khó",
+  "thang_di_duoc": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Đỉnh cao nhất Đông Dương. Tháng 12–2 có thể xuống dưới 0°C và thỉnh thoảng có băng giá trên đỉnh.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

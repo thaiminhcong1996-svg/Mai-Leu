@@ -1,0 +1,27 @@
+{
+  "ma": "ban-dao-son-tra",
+  "ten": "Bán đảo Sơn Trà",
+  "tinh": "Đà Nẵng",
+  "vung": "Miền Trung",
+  "do_cao_m": 696,
+  "loai": "Hiking",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "gioi_thieu": "Đi về trong ngày, có cơ hội gặp voọc chà vá chân nâu vào sáng sớm.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

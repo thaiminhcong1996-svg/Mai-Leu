@@ -1,0 +1,26 @@
+{
+  "ma": "mui-ke-ga",
+  "ten": "Mũi Kê Gà",
+  "tinh": "Bình Thuận",
+  "vung": "Miền Trung",
+  "do_cao_m": 0,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Hải đăng cổ trên đảo đá, ra bằng thuyền thúng khi thuỷ triều xuống. Bãi nhiều đá tảng, chọn chỗ dựng lều kỹ.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

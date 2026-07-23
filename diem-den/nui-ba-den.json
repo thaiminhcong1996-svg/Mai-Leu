@@ -1,0 +1,26 @@
+{
+  "ma": "nui-ba-den",
+  "ten": "Núi Bà Đen",
+  "tinh": "Tây Ninh",
+  "vung": "Miền Nam",
+  "do_cao_m": 986,
+  "loai": "Hiking",
+  "do_kho": "Trung bình",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Nóc nhà Nam Bộ. Đường Cột Điện dốc và trống trải — nhiều người leo đêm để tránh nắng và đón bình minh.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}
