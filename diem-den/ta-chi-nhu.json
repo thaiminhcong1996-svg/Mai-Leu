@@ -1,0 +1,26 @@
+{
+  "ma": "ta-chi-nhu",
+  "ten": "Tà Chì Nhù",
+  "tinh": "Yên Bái",
+  "vung": "Miền Bắc",
+  "do_cao_m": 2979,
+  "loai": "Trekking",
+  "do_kho": "Trung bình",
+  "thang_di_duoc": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "gioi_thieu": "Tháng 10–11 hoa chi pâu phủ tím cả sườn núi. Gió lớn quanh năm, gần như không có cây chắn.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

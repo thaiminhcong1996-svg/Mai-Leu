@@ -1,0 +1,26 @@
+{
+  "ma": "rung-sac-can-gio",
+  "ten": "Rừng Sác Cần Giờ",
+  "tinh": "TP.HCM",
+  "vung": "Miền Nam",
+  "do_cao_m": 0,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Rừng ngập mặn, đi từ trung tâm chỉ hơn một giờ. Chiều tối muỗi rất nhiều.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

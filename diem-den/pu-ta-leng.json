@@ -1,0 +1,27 @@
+{
+  "ma": "pu-ta-leng",
+  "ten": "Pu Ta Leng",
+  "tinh": "Lai Châu",
+  "vung": "Miền Bắc",
+  "do_cao_m": 3049,
+  "loai": "Trekking",
+  "do_kho": "Khó",
+  "thang_di_duoc": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Tháng 2–3 rừng đỗ quyên nở đỏ cả sườn. Đường nhiều dốc đất, mưa xuống là trơn như mỡ.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

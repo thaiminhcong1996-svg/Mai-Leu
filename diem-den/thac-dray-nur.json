@@ -1,0 +1,26 @@
+{
+  "ma": "thac-dray-nur",
+  "ten": "Thác Dray Nur",
+  "tinh": "Đắk Lắk",
+  "vung": "Tây Nguyên",
+  "do_cao_m": 400,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "gioi_thieu": "Mùa mưa thác đổ mạnh nhất trong năm. Bãi trại nằm sát bờ sông Sêrêpốk.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

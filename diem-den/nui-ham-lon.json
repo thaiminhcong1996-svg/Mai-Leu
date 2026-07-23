@@ -1,0 +1,28 @@
+{
+  "ma": "nui-ham-lon",
+  "ten": "Núi Hàm Lợn",
+  "tinh": "Hà Nội",
+  "vung": "Miền Bắc",
+  "do_cao_m": 462,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Gần Hà Nội nhất, hợp cho chuyến tập dượt đầu tiên trước khi đi cung dài.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}
