@@ -1,0 +1,25 @@
+{
+  "ma": "cong-vien-da-ninh-thuan",
+  "ten": "Công viên đá – Ninh Thuận",
+  "tinh": "Ninh Thuận",
+  "vung": "Miền Trung",
+  "do_cao_m": 0,
+  "loai": "Hiking",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "ANH KIỂM LẠI GIÚP EM: vị trí chính xác, tháng đi được và mô tả.",
+  "anh": [],
+  "hien": false,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

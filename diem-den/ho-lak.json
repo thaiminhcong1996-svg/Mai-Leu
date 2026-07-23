@@ -1,0 +1,26 @@
+{
+  "ma": "ho-lak",
+  "ten": "Hồ Lắk",
+  "tinh": "Đắk Lắk",
+  "vung": "Tây Nguyên",
+  "do_cao_m": 400,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Hồ nước ngọt tự nhiên lớn nhất Tây Nguyên, có buôn M'nông sống ven hồ. Sáng sớm sương phủ kín mặt nước.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

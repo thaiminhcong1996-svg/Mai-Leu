@@ -1,0 +1,26 @@
+{
+  "ma": "mui-nai-ha-tien",
+  "ten": "Mũi Nai – Hà Tiên",
+  "tinh": "Kiên Giang",
+  "vung": "Miền Tây",
+  "do_cao_m": 0,
+  "loai": "Camping",
+  "do_kho": "Dễ",
+  "thang_di_duoc": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Bãi biển sát thị xã, đường vào dễ. Hợp cho người mới thử cắm trại biển miền Tây.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}

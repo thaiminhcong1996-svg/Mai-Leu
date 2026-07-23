@@ -1,0 +1,28 @@
+{
+  "ma": "vuon-quoc-gia-ba-vi",
+  "ten": "Vườn quốc gia Ba Vì",
+  "tinh": "Hà Nội",
+  "vung": "Miền Bắc",
+  "do_cao_m": 1296,
+  "loai": "Hiking",
+  "do_kho": "Trung bình",
+  "thang_di_duoc": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gioi_thieu": "Rừng thông và di tích cũ trên đỉnh, đi về trong ngày từ Hà Nội. Mùa hè mưa nhiều, đường trơn.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}
