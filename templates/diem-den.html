@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<meta name="description" content="__DESC__">
+<link rel="canonical" href="__URL__">
+<meta property="og:title" content="__TITLE__">
+<meta property="og:description" content="__DESC__">
+<meta property="og:type" content="article">
+__OGIMG__
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Be+Vietnam+Pro:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/trang.css">
+<script type="application/ld+json">__JSONLD__</script>
+</head>
+<body>
+<nav class="nav"><div class="wrap nav-in">
+  <a href="/" class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3 2 21h20L12 3zM12 3v18M8 21l4-7 4 7"/></svg>MÁI LỀU<span class="sig">Thái Minh Công</span></a>
+  <a class="nb" href="/">← Lịch mùa 58 điểm</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">__VUNG__ · __TINH__</span>
+  <h1>__TEN__</h1>
+  <div class="meta">__CHIPS__</div>
+  <p class="lead">__GIOITHIEU__</p>
+  <a class="btn-map" target="_blank" rel="noopener" href="__MAPS__">Chỉ đường trên Google Maps</a>
+</div></header>
+
+<main class="wrap body">
+  __ANH__
+  <section class="months"><h2>Đi được tháng nào</h2><div class="mg">__MONTHS__</div></section>
+  __KINHNGHIEM__
+  <section class="gear"><h2>Đồ nên mang</h2><div class="cards">__GEAR__</div>
+  __GOI__
+    <div class="cta"><a class="btn dark" href="/#exp">Xem trên lịch mùa</a>
+    <a class="btn out" target="_blank" rel="noopener" href="__ZALO__">Hỏi Zalo về cung này</a></div>
+  </section>
+  <section class="near"><h2>Cùng vùng __VUNG__</h2><div class="nl">__NEAR__</div></section>
+</main>
+
+<footer class="foot"><div class="wrap foot-in">
+  <span class="brand">MÁI LỀU<span class="sig">Thái Minh Công</span></span>
+  <span>131A Đường số 6, Bình Trưng, TP.HCM · 9:00 – 19:00</span>
+  <span><a href="tel:0346889934">0346 889 934</a> · <a href="tel:0775440109">0775 440 109</a></span>
+</div></footer>
+<div class="pto" id="pto" style="display:none" onclick="if(event.target===this)dongLb()">
+  <button class="dong" onclick="dongLb()" aria-label="Đóng">✕</button>
+  <button class="truoc" onclick="event.stopPropagation();luot(-1)" aria-label="Ảnh trước">‹</button>
+  <img id="pto-anh" src="" alt="">
+  <button class="sau" onclick="event.stopPropagation();luot(1)" aria-label="Ảnh sau">›</button>
+  <span class="dem" id="pto-dem"></span>
+</div>
+<script>
+var lbDs=[], lbI=0;
+function moLb(ds, i){
+  lbDs = ds || []; lbI = i || 0;
+  if(!lbDs.length) return;
+  document.getElementById('pto-anh').src = lbDs[lbI];
+  document.getElementById('pto-dem').textContent =
+    lbDs.length > 1 ? (lbI+1) + ' / ' + lbDs.length : '';
+  document.querySelectorAll('.pto .truoc,.pto .sau').forEach(function(b){
+    b.style.display = lbDs.length > 1 ? '' : 'none'; });
+  var lb=document.getElementById('pto');
+  lb.style.display='flex'; lb.classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function dongLb(){
+  var lb=document.getElementById('pto');
+  lb.style.display='none'; lb.classList.remove('on');
+  document.body.style.overflow = '';
+}
+function luot(d){
+  if(!lbDs.length) return;
+  lbI = (lbI + d + lbDs.length) % lbDs.length;
+  document.getElementById('pto-anh').src = lbDs[lbI];
+  document.getElementById('pto-dem').textContent = (lbI+1) + ' / ' + lbDs.length;
+}
+document.addEventListener('keydown', function(e){
+  var lb=document.getElementById('pto');
+  if(!lb || lb.style.display==='none') return;
+  if(e.key === 'Escape') dongLb();
+  if(e.key === 'ArrowLeft') luot(-1);
+  if(e.key === 'ArrowRight') luot(1);
+});
+/* bấm vào ảnh lớn hoặc ảnh trong dải ngang */
+document.addEventListener('click', function(e){
+  var img = e.target.closest('.gal-main img, .shots img');
+  if(!img) return;
+  var hop = img.closest('.gal, .shots');
+  var ds = [];
+  try { ds = JSON.parse(hop.dataset.anh || '[]'); } catch(x){}
+  if(!ds.length) ds = [img.src];
+  var i = ds.indexOf(img.getAttribute('src'));
+  moLb(ds, i < 0 ? 0 : i);
+});
+</script>
+<script>
+function doiAnh(nut, src){
+  var lon=document.getElementById('anh-lon'); if(lon) lon.src=src;
+  var all=nut.parentElement.querySelectorAll('button');
+  for(var i=0;i<all.length;i++) all[i].classList.remove('on');
+  nut.classList.add('on');
+}
+</script>
+</body></html>
