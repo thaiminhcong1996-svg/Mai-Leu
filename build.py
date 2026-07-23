@@ -155,7 +155,7 @@ for d in DD:
 
 # ── ảnh và css đi kèm ──
 import shutil
-for src, dst in [("static", "static")]:
+for src, dst in [("static", "static"), ("admin", "admin")]:
     s = os.path.join(ROOT, src)
     if os.path.isdir(s):
         shutil.copytree(s, os.path.join(OUT, dst), dirs_exist_ok=True)
