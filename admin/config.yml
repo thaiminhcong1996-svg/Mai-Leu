@@ -1,0 +1,84 @@
+# ═══════════════════════════════════════════════════════════
+# MÁI LỀU — cấu hình trang quản trị
+# Anh KHÔNG cần sửa file này. Chỉ đúng một dòng ở bước bật
+# đăng nhập, em sẽ chỉ khi tới đó (dòng base_url bên dưới).
+# ═══════════════════════════════════════════════════════════
+
+backend:
+  name: github
+  repo: thaiminhcong1996-svg/Mai-Leu
+  branch: main
+  # base_url: https://...              # ← điền ở bước bật đăng nhập
+
+publish_mode: simple
+media_folder: "static/anh"
+public_folder: "/static/anh"
+
+locale: vi
+
+collections:
+  - name: diem-den
+    label: "Điểm đến"
+    label_singular: "điểm đến"
+    folder: "content/diem-den"
+    create: true
+    slug: "{{fields.ma}}"
+    identifier_field: ten
+    summary: "{{ten}} — {{tinh}}"
+    sortable_fields: [ten, vung, do_cao_m]
+    fields:
+      - {name: ten, label: "Tên điểm đến", widget: string}
+      - {name: ma, label: "Mã (địa chỉ trang, viết liền không dấu)", widget: string, hint: "Ví dụ ta-nang-phan-dung. Đặt rồi thì đừng đổi, đổi là mất thứ hạng Google."}
+      - {name: tinh, label: "Tỉnh / thành", widget: string}
+      - {name: vung, label: "Vùng", widget: select, options: ["Miền Bắc","Miền Trung","Tây Nguyên","Miền Nam","Miền Tây"]}
+      - {name: do_cao_m, label: "Độ cao (mét)", widget: number, value_type: int, min: 0}
+      - {name: loai, label: "Loại hình", widget: select, options: [Trekking, Hiking, Camping, Glamping]}
+      - {name: do_kho, label: "Độ khó", widget: select, options: ["Dễ","Trung bình","Khó"]}
+      - {name: thang_di_duoc, label: "Tháng đi được", widget: list, field: {name: thang, label: Tháng, widget: number, value_type: int, min: 1, max: 12}, hint: "Thêm từng tháng. Đây là thứ quyết định lịch mùa ở trang chủ."}
+      - {name: gioi_thieu, label: "Giới thiệu ngắn", widget: text, required: false}
+      - {name: anh, label: "Ảnh anh tự chụp", widget: list, field: {name: file, label: Ảnh, widget: image}, required: false, hint: "Kéo ảnh từ máy vào. Ảnh mờ, trời xấu, có người trong đoàn đều dùng được."}
+
+      - {name: q1_so_lan_di, label: "1. Anh đi cung này mấy lần, lần gần nhất tháng mấy?", widget: text, required: false, hint: "Một dòng thôi. Nhưng đây là dòng làm khách tin những dòng sau."}
+      - {name: q2_xuat_phat_gui_xe, label: "2. Xuất phát từ đâu, gửi xe ở đâu, mất bao lâu tới điểm tập kết?", widget: text, required: false, hint: "Chỗ gửi xe và giá gửi là thứ không đâu ghi mà ai cũng muốn biết."}
+      - {name: q3_nuoc, label: "3. Nước lấy ở đâu — có suối không, hay phải vác đủ?", widget: text, required: false, hint: "Ghi rõ km nào có suối, đoạn nào không."}
+      - {name: q4_ngu_lanh_gio, label: "4. Ngủ ở chỗ nào, đêm lạnh cỡ nào, gió ra sao?", widget: text, required: false, hint: "Con số nhiệt độ thật quan trọng hơn tính từ."}
+      - {name: q5_ai_khong_nen_di, label: "5. Ai KHÔNG nên đi cung này?", widget: text, required: false, hint: "Câu làm khách tin anh nhất, vì nó có thể làm anh mất một đơn."}
+      - {name: q6_thieu_thua, label: "6. Một thứ hay mang thiếu, và một thứ hay mang thừa?", widget: text, required: false, hint: "Chỗ này bán được hàng mà không cần mời."}
+
+      - {name: hien, label: "Hiện trên web", widget: boolean, default: true}
+
+  - name: san-pham
+    label: "Sản phẩm"
+    label_singular: "sản phẩm"
+    folder: "content/san-pham"
+    create: true
+    slug: "{{fields.ma}}"
+    identifier_field: ten
+    summary: "{{ten}} — {{nhom}}"
+    fields:
+      - {name: ten, label: "Tên sản phẩm", widget: string}
+      - {name: ma, label: "Mã", widget: string, hint: "SP01, SP02… Số trong mã dùng để ghép đồ với điểm đến, đừng đổi."}
+      - {name: nhom, label: "Nhóm", widget: select, options: ["Lều","Túi ngủ","Balo","Bếp","Đèn","Giày","Áo mưa","Đệm","Võng","Áo","Bàn ghế","Phụ kiện"]}
+      - {name: ly_do, label: "Dùng để làm gì", widget: string, hint: "Hai ba chữ, hiện đè lên ảnh. Ví dụ: Chống lạnh."}
+      - {name: gia_ban, label: "Giá bán (₫)", widget: number, value_type: int, min: 0}
+      - {name: gia_thue_ngay, label: "Giá thuê mỗi ngày (₫)", widget: number, value_type: int, min: 0, default: 0, hint: "Để 0 nếu món này không cho thuê."}
+      - {name: mo_ta, label: "Mô tả ngắn", widget: text}
+      - {name: thong_so, label: "Thông số", widget: list, field: {name: dong, label: "Dòng", widget: string}, required: false, hint: "Mỗi dòng dạng — Trọng lượng: 2,4 kg"}
+      - {name: anh, label: "Ảnh", widget: list, field: {name: file, label: Ảnh, widget: image}, required: false, hint: "Tấm 1 toàn cảnh · tấm 2 cận cảnh chi tiết · tấm 3 đang dùng thật ngoài trời."}
+      - {name: hien, label: "Hiện trên web", widget: boolean, default: true}
+
+  - name: shop
+    label: "Thông tin shop"
+    files:
+      - name: shop
+        label: "Thông tin shop"
+        file: "content/shop.json"
+        fields:
+          - {name: ten, label: "Tên shop", widget: string}
+          - {name: chu, label: "Tên chủ shop", widget: string}
+          - {name: dia_chi, label: "Địa chỉ", widget: string}
+          - {name: gio, label: "Giờ mở cửa", widget: string}
+          - {name: zalo_1, label: "Zalo 1 — số", widget: string}
+          - {name: ten_1, label: "Zalo 1 — tên", widget: string}
+          - {name: zalo_2, label: "Zalo 2 — số", widget: string}
+          - {name: ten_2, label: "Zalo 2 — tên", widget: string}
