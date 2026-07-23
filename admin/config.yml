@@ -109,4 +109,5 @@ collections:
           - {name: ten_1, label: "Zalo 1 — tên", widget: string}
           - {name: zalo_2, label: "Zalo 2 — số", widget: string}
           - {name: ten_2, label: "Zalo 2 — tên", widget: string}
+          - {name: uu_dai, label: "Dòng ghi chú trên trang sản phẩm", widget: list, field: {name: dong, label: "Dòng", widget: string}, required: false, hint: "Giao hàng, đổi trả, thủ tục cọc thuê… Mỗi dòng một ý ngắn."}
           - {name: giam_goi_thue, label: "Giảm giá khi thuê trọn bộ (%)", widget: number, value_type: int, min: 0, max: 50, default: 15, hint: "Thuê cả bộ rẻ hơn thuê lẻ bao nhiêu phần trăm. Để 0 nếu không giảm."}
