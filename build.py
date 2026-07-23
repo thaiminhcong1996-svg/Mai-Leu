@@ -197,10 +197,7 @@ for d in DD:
                     + '<span class="chip">Độ khó: %s</span>' % E(d["do_kho"])
                     + '<span class="chip">%d tháng đi được</span>' % len(d["thang_di_duoc"]))
 
-    anh = ""
-    if d.get("anh"):
-        anh = '<section class="shots">%s</section>' % "".join(
-            '<div><img src="%s" alt="%s" loading="lazy"></div>' % (E(a), E(ten)) for a in d["anh"])
+    anh = ('<section>%s</section>' % thu_vien(d["anh"], ten, "ch\u01b0a c\u00f3 \u1ea3nh cung n\u00e0y")) if d.get("anh") else ""
 
     got = [(k, q) for k, q in Q6 if (d.get(k) or "").strip()]
     if got:
@@ -303,7 +300,32 @@ def khung(title, desc, url, than, extra_css=""):
 <meta property="og:description" content="%s">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Be+Vietnam+Pro:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/trang.css">%s
-</head><body>%s%s%s</body></html>""" % (title, desc, url, title, desc, extra_css, NAV_SP, than, FOOT_SP)
+</head><body>%s%s%s%s</body></html>""" % (title, desc, url, title, desc, extra_css, NAV_SP, than, FOOT_SP, GAL_JS)
+
+
+def thu_vien(anh, ten, trong="chưa có ảnh"):
+    """Ảnh lớn + dải ảnh nhỏ bấm để đổi."""
+    if not anh:
+        return ('<div class="gal"><div class="gal-main">'
+                '<span class="trong">%s</span></div></div>' % trong)
+    if len(anh) == 1:
+        return ('<div class="gal"><div class="gal-main">'
+                '<img src="%s" alt="%s"></div></div>' % (E(anh[0]), E(ten)))
+    th = "".join('<button class="%s" onclick="doiAnh(this,\'%s\')">'
+                 '<img src="%s" alt="" loading="lazy"></button>'
+                 % ("on" if i == 0 else "", E(a), E(a)) for i, a in enumerate(anh))
+    return ('<div class="gal"><div class="gal-th">%s</div>'
+            '<div class="gal-main"><img id="anh-lon" src="%s" alt="%s"></div></div>'
+            % (th, E(anh[0]), E(ten)))
+
+GAL_JS = """<script>
+function doiAnh(nut, src){
+  var lon=document.getElementById('anh-lon'); if(lon) lon.src=src;
+  var all=nut.parentElement.querySelectorAll('button');
+  for(var i=0;i<all.length;i++) all[i].classList.remove('on');
+  nut.classList.add('on');
+}
+</script>"""
 
 # ---- trang liệt kê tất cả ----
 nhoms = []
@@ -395,28 +417,42 @@ for p in SP:
     else:
         nut_thue = ""
 
-    than = """<header class="hero"><div class="wrap">
-  <span class="eyebrow">%s \u00b7 %s</span>
-  <h1>%s</h1>
-  <p class="lead">%s</p>
-  <div class="gia"><div><span class="lb">Gi\u00e1 b\u00e1n</span><span class="vl">%s</span></div>%s</div>
-</div></header>
-<main class="wrap body">
-  %s
+    uu = SHOP.get("uu_dai") or []
+    uu_html = ('<div class="uudai"><div class="t">C\u1ea7n bi\u1ebft</div><ul>%s</ul></div>'
+               % "".join("<li>%s</li>" % E(x) for x in uu)) if uu else ""
+
+    than = """<main class="wrap">
+  <div class="sp-grid">
+    <div>%s</div>
+    <div class="sp-info">
+      <span class="eyebrow">%s \u00b7 %s</span>
+      <h1>%s</h1>
+      <p class="mota">%s</p>
+      <div class="sp-gia">
+        <div><span class="lb">Gi\u00e1 b\u00e1n</span><span class="vl">%s</span></div>%s
+      </div>
+      <div class="sp-cta">
+        <a class="btn dark" target="_blank" rel="noopener" href="%s">H\u1ecfi mua qua Zalo</a>%s
+      </div>
+      %s
+    </div>
+  </div>
+</main>
+<main class="wrap body sp-duoi">
   %s
   <section><h2>D\u00f9ng cho nh\u1eefng cung n\u00e0o</h2>
     <p style="color:var(--muted);max-width:60ch;margin-bottom:14px">M\u00f3n n\u00e0y n\u1eb1m trong danh s\u00e1ch \u0111\u1ed3 g\u1ee3i \u00fd c\u1ee7a %d cung.</p>
     <div class="nl">%s</div>%s</section>
   <section><div class="cta">
-    <a class="btn dark" target="_blank" rel="noopener" href="%s">H\u1ecfi mua qua Zalo</a>%s
     <a class="btn out" href="/san-pham/">\u2190 T\u1ea5t c\u1ea3 s\u1ea3n ph\u1ea9m</a>
   </div></section>
 </main>""" % (
+        thu_vien(p.get("anh") or [], p["ten"]),
         E(p["nhom"]), E(p["ly_do"]), E(p["ten"]), E(p["mo_ta"]), vnd(p["gia_ban"]),
-        '<div><span class="lb">Thu\u00ea theo ng\u00e0y</span><span class="vl">%s</span></div>' % vnd(p["gia_thue_ngay"]) if p["gia_thue_ngay"] else "",
-        anh,
+        '<div class="thue"><span class="lb">Thu\u00ea theo ng\u00e0y</span><span class="vl">%s</span></div>' % vnd(p["gia_thue_ngay"]) if p["gia_thue_ngay"] else "",
+        zl, nut_thue, uu_html,
         '<section><h2>Th\u00f4ng s\u1ed1</h2><dl class="spec2">%s</dl></section>' % spec if spec else "",
-        len(cungs), ds, them, zl, nut_thue)
+        len(cungs), ds, them)
 
     desc = "%s \u2014 %s%s. %s" % (p["ten"], vnd(p["gia_ban"]),
             ", thu\u00ea %s/ng\u00e0y" % vnd(p["gia_thue_ngay"]) if p["gia_thue_ngay"] else "", p["mo_ta"])
