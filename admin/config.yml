@@ -37,6 +37,8 @@ collections:
   - name: diem-den
     label: "Điểm đến"
     label_singular: "điểm đến"
+    editor:
+      preview: false
     folder: "diem-den"
     extension: json
     format: json
@@ -69,6 +71,8 @@ collections:
   - name: san-pham
     label: "Sản phẩm"
     label_singular: "sản phẩm"
+    editor:
+      preview: false
     folder: "san-pham"
     extension: json
     format: json
@@ -90,6 +94,8 @@ collections:
 
   - name: shop
     label: "Thông tin shop"
+    editor:
+      preview: false
     files:
       - name: shop
         label: "Thông tin shop"
