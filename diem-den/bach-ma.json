@@ -1,0 +1,27 @@
+{
+  "ma": "bach-ma",
+  "ten": "Bạch Mã",
+  "tinh": "Huế",
+  "vung": "Miền Trung",
+  "do_cao_m": 1450,
+  "loai": "Trekking",
+  "do_kho": "Trung bình",
+  "thang_di_duoc": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "gioi_thieu": "Mùa mưa tháng 10–12 đường trơn và vườn quốc gia thường hạn chế vào. Rừng ẩm quanh năm nên rất nhiều vắt.",
+  "anh": [],
+  "hien": true,
+  "q1_so_lan_di": "",
+  "q2_xuat_phat_gui_xe": "",
+  "q3_nuoc": "",
+  "q4_ngu_lanh_gio": "",
+  "q5_ai_khong_nen_di": "",
+  "q6_thieu_thua": ""
+}
