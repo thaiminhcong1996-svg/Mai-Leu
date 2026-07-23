@@ -1,20 +1,37 @@
 # ═══════════════════════════════════════════════════════════
 # MÁI LỀU — cấu hình trang quản trị
-# Anh KHÔNG cần sửa file này. Chỉ đúng một dòng ở bước bật
-# đăng nhập, em sẽ chỉ khi tới đó (dòng base_url bên dưới).
+# Đăng nhập qua DecapBridge. Anh không cần sửa gì trong file này.
 # ═══════════════════════════════════════════════════════════
 
 backend:
-  name: github
-  repo:  maileu/maileu.github.io
+  name: git-gateway
+  repo: maileu/maileu.github.io
   branch: main
-  # base_url: https://...              # ← điền ở bước bật đăng nhập
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/62744d96-8f78-4f01-aef3-6485b4f0c353/pkce
+  auth_token_endpoint: /sites/62744d96-8f78-4f01-aef3-6485b4f0c353/token
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Thêm {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}>'
+    update: 'Sửa {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}>'
+    delete: 'Xoá {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}>'
+    uploadMedia: 'Thêm ảnh "{{path}}" - {{author-name}} <{{author-login}}>'
+    deleteMedia: 'Xoá ảnh "{{path}}" - {{author-name}} <{{author-login}}>'
+    openAuthoring: '{{message}} - {{author-name}} <{{author-login}}>'
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+site_url: https://maileu.github.io
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 publish_mode: simple
 media_folder: "static/anh"
 public_folder: "/static/anh"
-
-locale: vi
 
 collections:
   - name: diem-den
