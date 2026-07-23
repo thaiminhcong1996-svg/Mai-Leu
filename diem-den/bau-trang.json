@@ -1,11 +1,5 @@
 {
-  "ma": "bau-trang",
-  "ten": "Bàu Trắng",
-  "tinh": "Bình Thuận",
-  "vung": "Miền Trung",
-  "do_cao_m": 30,
-  "loai": "Hiking",
-  "do_kho": "Dễ",
+  "gioi_thieu": "Đồi cát trắng ôm lấy hồ sen. Cát nóng rát từ 10 giờ sáng, chỉ nên đi sớm hoặc chiều muộn.",
   "thang_di_duoc": [
     11,
     12,
@@ -14,13 +8,19 @@
     3,
     4
   ],
-  "gioi_thieu": "Đồi cát trắng ôm lấy hồ sen. Cát nóng rát từ 10 giờ sáng, chỉ nên đi sớm hoặc chiều muộn.",
-  "anh": [],
   "hien": true,
-  "q1_so_lan_di": "",
-  "q2_xuat_phat_gui_xe": "",
-  "q3_nuoc": "",
-  "q4_ngu_lanh_gio": "",
-  "q5_ai_khong_nen_di": "",
-  "q6_thieu_thua": ""
+  "loai": "Hiking",
+  "do_cao_m": 30,
+  "q1_so_lan_di": "Nhiều lần đến mức không nhớ. Lần gần nhất đi là tháng 4",
+  "tinh": "Bình Thuận",
+  "ma": "bau-trang",
+  "q6_thieu_thua": "Kính là món đồ nên mang theo vì ở đây rất nắng và cát bay nếu tham quan đồi cát.",
+  "q2_xuat_phat_gui_xe": "Vì đây cũng là địa điểm nổi tiếng ở Quê Công nên đi khá gần, cách nhà khoảng 25 phút đi xe. Thường thì Bàu Trắng chỉ đến tham quan du lịch thôi có chỗ gửi xe miễn phí, còn có đường mòn nhỏ đối diện bàu trắng có thể camping và ngắm biển.",
+  "vung": "Miền Trung",
+  "q3_nuoc": "Nước phải mua mang theo hoặc mua mấy xe bán nước quen đường.",
+  "anh": [],
+  "q4_ngu_lanh_gio": "Nhiệt độ đêm tầm 27 28 độ theo mùa. Gió và cát bay cũng nhiều nha",
+  "ten": "Bàu Trắng",
+  "q5_ai_khong_nen_di": "Phù hợp hầu hết mọi người.",
+  "do_kho": "Dễ"
 }
