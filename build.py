@@ -17,11 +17,11 @@ def wr(rel, s):
     os.makedirs(os.path.dirname(p), exist_ok=True)
     io.open(p, "w", encoding="utf-8").write(s)
 
-DD = sorted([rd(p) for p in glob.glob(os.path.join(ROOT, "content/diem-den/*.json"))],
+DD = sorted([rd(p) for p in glob.glob(os.path.join(ROOT, "diem-den/*.json"))],
             key=lambda d: d["ten"])
-SP = sorted([rd(p) for p in glob.glob(os.path.join(ROOT, "content/san-pham/*.json"))],
+SP = sorted([rd(p) for p in glob.glob(os.path.join(ROOT, "san-pham/*.json"))],
             key=lambda p: p["ma"])
-SHOP = rd(os.path.join(ROOT, "content/shop.json"))
+SHOP = rd(os.path.join(ROOT, "shop.json"))
 DD = [d for d in DD if d.get("hien", True)]
 SP = [p for p in SP if p.get("hien", True)]
 
