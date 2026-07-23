@@ -1,17 +1,21 @@
 {
-  "ma": "SP02",
-  "ten": "Túi ngủ sợi bông −5°C",
-  "nhom": "Túi ngủ",
-  "gia_ban": 1290000,
-  "gia_thue_ngay": 60000,
-  "ly_do": "Chống lạnh",
-  "mo_ta": "Thoải mái ở 2°C, giới hạn −5°C. Cho vùng núi cao.",
   "thong_so": [
     "Trọng lượng: 1,5 kg",
     "Thoải mái: 2 °C",
     "Giới hạn: −5 °C",
     "Vỏ: Polyester 210T"
   ],
-  "anh": [],
-  "hien": true
+  "hien": true,
+  "mo_ta": "Thoải mái ở 2°C, giới hạn −5°C. Cho vùng núi cao.",
+  "gia_thue_ngay": 60000,
+  "gia_ban": 1290000,
+  "ma": "SP02",
+  "nhom": "Túi ngủ",
+  "anh": [
+    "/static/anh/tuingu.png",
+    "/static/anh/tuingu2.png",
+    "/static/anh/tuingu1.png"
+  ],
+  "ten": "Túi ngủ sợi bông −5°C",
+  "ly_do": "Chống lạnh"
 }
